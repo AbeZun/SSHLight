@@ -100,6 +100,7 @@ STEP 3) save file and exit editor
 =====
 
 ---- 1 ON MAC ----
+
 1a. Open a terminal window and type:
 
     nano turnlightsoff.sh
@@ -121,6 +122,7 @@ STEP 3) save file and exit editor
 
 
 ---- 2 ON PC ----
+
 1b. Open your favorite Text Editor (I Use VSCODE) and create a file called "turnlightsoff.sh"
 
 2b. Here type the commaned to turn your light off:
