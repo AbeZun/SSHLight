@@ -9,7 +9,7 @@ More Info On uhubctl
 For a full list of compatible USB Hubs and all things uhubctl check: https://github.com/mvp/uhubctl
 
 
-1 Install Uhubctl On Linux
+1 - Install Uhubctl On Linux
 =========
 
 First, you need to install library libusb-1.0 (version 1.0.12 or later, 1.0.16 or later is recommended):
@@ -36,7 +36,7 @@ You can turn on the power on a USB port(s) like this:
     uhubctl -l 20-5.2 -a on -p 3
 
 
-2 Fix USB Permissions Here
+2 - Fix USB Permissions Here
 =========
  > :warning: Otherwise you will need to run code with sudo everytime
 
@@ -75,7 +75,7 @@ STEP 2) at the end of the file add the following line:
 STEP 3) save file and exit editor 
 
 
-3 Create Bash Script and Save It To: `/etc/profile.d/`
+3 - Create Bash Script and Save It To: `/etc/profile.d/`
 =====
 > :warning: The will turn on Light at SSH Login.
 1. Write SCRIPT:
@@ -96,7 +96,7 @@ STEP 3) save file and exit editor
 
 
 
-4 Turn Off Lights Remotely
+4 - Turn Off Lights Remotely
 =====
 
 ---- 1 ON MAC ----
