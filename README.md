@@ -3,13 +3,13 @@
 
 This works using the uhubctl utility which can turn port power on and off from specific USB Hubs.
 
-MORE INFO ON uhubctl
+More Info On uhubctl
 ===================
 
 For a full list of compatible USB Hubs and all things uhubctl check: https://github.com/mvp/uhubctl
 
 
-Install Uhubctl On Linux
+1. Install Uhubctl On Linux
 =========
 
 First, you need to install library libusb-1.0 (version 1.0.12 or later, 1.0.16 or later is recommended):
@@ -36,7 +36,7 @@ You can turn on the power on a USB port(s) like this:
     uhubctl -l 20-5.2 -a on -p 3
 
 
-FIX USB PERMISSIONS ISSUE
+2. Fix USB Permissions Here
 =========
  > :warning: Otherwise you will need to run code with sudo everytime
 
@@ -59,7 +59,7 @@ d. For the udev rule changes to take effect, RUN:
     sudo udevadm trigger --attr-match=subsystem=usb
 
 
-OPTIONAL STEP
+--Optional Step--
 =========
 > :warning: In order to not have to type in password everytime to exicute sudo via script, edit your "sudoers" file by doing the following:
 
@@ -75,14 +75,14 @@ STEP 2) at the end of the file add the following line:
 STEP 3) save file and exit editor 
 
 
-Add Bash Script and save it to `/etc/profile.d/`
+3. Create Bash Script and Save It To: `/etc/profile.d/`
 =====
 > :warning: The will turn on Light at SSH Login.
 1. Write SCRIPT:
 
     #!/etc/profile.d
-	#TURN ON LIGHT WHEN SSH SESSION STARTS
-	uhubctl -l 3-3 -a on -p 3
+    #TURN ON LIGHT WHEN SSH SESSION STARTS
+    uhubctl -l 3-3 -a on -p 3
 
 2. Restart Profile By Running:
 
@@ -91,7 +91,7 @@ Add Bash Script and save it to `/etc/profile.d/`
 3. DONE! Now start a new SSH session to test.
 
 
-TURN OFF LIGHT REMOTELY
+4. Turn Off Lights Remotely
 =====
 
 ---- 1 ON MAC ----
