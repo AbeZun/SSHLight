@@ -88,7 +88,9 @@ STEP 3) save file and exit editor
 
 2. Restart Profile By Running:
 
+    ```console
     source /etc/profile.d
+    ```
 
 3. DONE! Now start a new SSH session to test.
 
