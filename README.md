@@ -80,9 +80,11 @@ STEP 3) save file and exit editor
 > :warning: The will turn on Light at SSH Login.
 1. Write SCRIPT:
 
+    ```console
     #!/etc/profile.d
     #TURN ON LIGHT WHEN SSH SESSION STARTS
     uhubctl -l 3-3 -a on -p 3
+    ```
 
 2. Restart Profile By Running:
 
