@@ -1,1 +1,0 @@
-start cmd.exe /c "ssh user@address < "C:\Path\To\The\File\turnlightsoff.sh""
